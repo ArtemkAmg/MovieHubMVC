@@ -51,6 +51,12 @@
                             Contact
                         </a>
                     </li>
+                    <li>
+                        <a asp-controller="Files" asp-action="Index"
+                           class="@(ViewContext.RouteData.Values["Controller"]?.ToString() == "Files" ? "active" : "")">
+                            Files
+                        </a>
+                    </li>
                     <li class="nav-mobile-only">
                         <a asp-controller="Favorites" asp-action="Index"
                            class="@(ViewContext.RouteData.Values["Controller"]?.ToString() == "Favorites" ? "active" : "")">

@@ -1,0 +1,69 @@
+@model MovieHubMvc.Models.FileItemViewModel
+@{
+    ViewData["Title"] = Model.Name;
+    var isImage = new[] { ".jpg", ".jpeg", ".png", ".gif", ".webp", ".bmp" }
+        .Contains(Model.Extension, StringComparer.OrdinalIgnoreCase);
+    var isVideo = new[] { ".mp4", ".webm" }
+        .Contains(Model.Extension, StringComparer.OrdinalIgnoreCase);
+    var isPdf = Model.Extension.Equals(".pdf", StringComparison.OrdinalIgnoreCase);
+    var textContent = ViewBag.TextContent as string;
+}
+
+<section class="trending" style="padding-top: 140px; min-height: 70vh;">
+    <div class="container" style="max-width: 900px;">
+
+        <p style="margin-bottom: 16px;">
+            <a asp-controller="Files" asp-action="Index" style="color:#E50914;text-decoration:none;">
+                ← Back to files
+            </a>
+        </p>
+
+        <div class="section-header" style="margin-bottom: 20px; flex-wrap: wrap; gap: 12px;">
+            <h2 style="font-size: 28px; word-break: break-all;">@Model.Name</h2>
+        </div>
+
+        <p style="color:#888; margin-bottom: 24px;">
+            @Model.SizeDisplay · uploaded @Model.UploadedAt.ToString("yyyy-MM-dd HH:mm") · @Model.Extension
+        </p>
+
+        <div style="margin-bottom: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="@Model.RelativePath" target="_blank" class="hero-btn" style="text-decoration:none;padding:12px 24px;">
+                <i class="fa-solid fa-up-right-from-square"></i> Open raw
+            </a>
+            <a asp-controller="Files" asp-action="Download" asp-route-name="@Model.Name"
+               class="secondary-btn" style="text-decoration:none;padding:12px 24px;">
+                <i class="fa-solid fa-download"></i> Download
+            </a>
+        </div>
+
+        <div style="background:#1a1a1a;border:1px solid #2a2a2a;border-radius:16px;padding:20px;overflow:auto;">
+            @if (isImage)
+            {
+                <img src="@Model.RelativePath" alt="@Model.Name"
+                     style="max-width:100%;height:auto;border-radius:8px;display:block;margin:0 auto;" />
+            }
+            else if (isVideo)
+            {
+                <video controls style="max-width:100%;border-radius:8px;display:block;margin:0 auto;">
+                    <source src="@Model.RelativePath" />
+                    Your browser does not support video.
+                </video>
+            }
+            else if (isPdf)
+            {
+                <iframe src="@Model.RelativePath" style="width:100%;min-height:70vh;border:none;border-radius:8px;"></iframe>
+            }
+            else if (textContent != null)
+            {
+                <pre style="white-space:pre-wrap;word-break:break-word;color:#ddd;margin:0;font-size:14px;">@textContent</pre>
+            }
+            else
+            {
+                <p style="color:#888;margin:0;">
+                    Preview is not available for this type.
+                    Use <strong>Open raw</strong> or <strong>Download</strong>.
+                </p>
+            }
+        </div>
+    </div>
+</section>

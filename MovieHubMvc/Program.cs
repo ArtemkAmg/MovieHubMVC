@@ -15,6 +15,12 @@ builder.Logging.AddProvider(new MovieHubMvc.Logging.FileLoggerProvider(
 
 builder.Services.AddControllersWithViews();
 
+// Allow multipart uploads up to ~10 MB
+builder.Services.Configure<Microsoft.AspNetCore.Http.Features.FormOptions>(o =>
+{
+    o.MultipartBodyLengthLimit = 10 * 1024 * 1024;
+});
+
 // ===== Email configuration from appsettings.json =====
 builder.Services.Configure<EmailSettings>(
     builder.Configuration.GetSection("EmailSettings"));
