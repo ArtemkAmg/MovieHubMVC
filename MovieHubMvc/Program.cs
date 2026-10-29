@@ -1,9 +1,11 @@
 using System.Globalization;
+using FluentValidation;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.Localization;
 using MovieHubMvc.Localization;
 using MovieHubMvc.Middleware;
 using MovieHubMvc.Services;
+using MovieHubMvc.Validators;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,6 +28,8 @@ builder.Services.AddLocalization();
 builder.Services.AddControllersWithViews()
     .AddViewLocalization()
     .AddDataAnnotationsLocalization();
+
+builder.Services.AddValidatorsFromAssemblyContaining<MovieSuggestionValidator>();
 
 builder.Services.Configure<RequestLocalizationOptions>(options =>
 {

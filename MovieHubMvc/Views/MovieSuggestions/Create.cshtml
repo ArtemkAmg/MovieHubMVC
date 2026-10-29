@@ -1,0 +1,104 @@
+@model MovieHubMvc.Models.MovieSuggestionViewModel
+@{
+    ViewData["Title"] = "Suggest a Movie";
+}
+
+@section Styles {
+    <style>
+        .suggestion-form .suggestion-input { width:100%;padding:12px 14px;border:1px solid #3a3a3a;border-radius:10px;background:#111;color:#fff; }
+        .suggestion-form .suggestion-input:focus { outline:none;border-color:#e50914;box-shadow:0 0 0 2px rgb(229 9 20 / 18%); }
+        .suggestion-form .input-validation-error { border-color:#ff7777; }
+        .suggestion-form .field-validation-error,.suggestion-form .validation-summary-errors { color:#ff7777; }
+        .suggestion-form .validation-summary-errors ul { margin:0;padding-left:22px; }
+    </style>
+}
+
+<section style="padding:140px 0 70px;min-height:70vh;">
+    <div class="container" style="max-width:760px;">
+        <div class="section-header" style="margin-bottom:24px;">
+            <h2>Suggest a Movie</h2>
+        </div>
+        <p style="color:#bdbdbd;margin-bottom:26px;">
+            Fill in all 10 fields. The server validates the form with FluentValidation.
+        </p>
+
+        @if (TempData["SuggestionSuccess"] is string successMessage)
+        {
+            <div role="status" style="background:#1a3a1a;border:1px solid #2d5a2d;color:#8fdf8f;padding:14px 18px;border-radius:12px;margin-bottom:22px;">
+                @successMessage
+            </div>
+        }
+
+        <form asp-action="Create" method="post" class="suggestion-form" style="background:#1a1a1a;padding:28px;border-radius:16px;border:1px solid #2a2a2a;">
+            @Html.AntiForgeryToken()
+            @if (!ViewData.ModelState.IsValid)
+            {
+                <p style="color:#ff7777;margin-bottom:10px;">Please fix the validation errors below.</p>
+            }
+            <div asp-validation-summary="All" role="alert" style="color:#ff7777;margin-bottom:18px;"></div>
+
+            <div style="margin-bottom:18px;">
+                <label asp-for="Title" style="display:block;margin-bottom:6px;"></label>
+                <input asp-for="Title" class="suggestion-input" autocomplete="off" />
+                <span asp-validation-for="Title" style="color:#ff7777;font-size:13px;"></span>
+            </div>
+            <div style="margin-bottom:18px;">
+                <label asp-for="Director" style="display:block;margin-bottom:6px;"></label>
+                <input asp-for="Director" class="suggestion-input" autocomplete="off" />
+                <span asp-validation-for="Director" style="color:#ff7777;font-size:13px;"></span>
+            </div>
+            <div style="margin-bottom:18px;">
+                <label asp-for="Genre" style="display:block;margin-bottom:6px;"></label>
+                <select asp-for="Genre" class="suggestion-input">
+                    <option value="">Choose a genre</option>
+                    <option>Action</option><option>Animation</option><option>Comedy</option>
+                    <option>Documentary</option><option>Drama</option><option>Sci-Fi</option><option>Other</option>
+                </select>
+                <span asp-validation-for="Genre" style="color:#ff7777;font-size:13px;"></span>
+            </div>
+            <div style="margin-bottom:18px;">
+                <label asp-for="ReleaseYear" style="display:block;margin-bottom:6px;"></label>
+                <input asp-for="ReleaseYear" type="number" min="1888" max="2100" class="suggestion-input" />
+                <span asp-validation-for="ReleaseYear" style="color:#ff7777;font-size:13px;"></span>
+            </div>
+            <div style="margin-bottom:18px;">
+                <label asp-for="DurationMinutes" style="display:block;margin-bottom:6px;"></label>
+                <input asp-for="DurationMinutes" type="number" min="1" max="600" class="suggestion-input" />
+                <span asp-validation-for="DurationMinutes" style="color:#ff7777;font-size:13px;"></span>
+            </div>
+            <div style="margin-bottom:18px;">
+                <label asp-for="Rating" style="display:block;margin-bottom:6px;"></label>
+                <input asp-for="Rating" type="number" min="0" max="10" step="0.1" class="suggestion-input" />
+                <span asp-validation-for="Rating" style="color:#ff7777;font-size:13px;"></span>
+            </div>
+            <div style="margin-bottom:18px;">
+                <label asp-for="Country" style="display:block;margin-bottom:6px;"></label>
+                <input asp-for="Country" class="suggestion-input" autocomplete="off" />
+                <span asp-validation-for="Country" style="color:#ff7777;font-size:13px;"></span>
+            </div>
+            <div style="margin-bottom:18px;">
+                <label asp-for="ContactEmail" style="display:block;margin-bottom:6px;"></label>
+                <input asp-for="ContactEmail" type="email" class="suggestion-input" autocomplete="email" />
+                <span asp-validation-for="ContactEmail" style="color:#ff7777;font-size:13px;"></span>
+            </div>
+            <div style="margin-bottom:18px;">
+                <label asp-for="Description" style="display:block;margin-bottom:6px;"></label>
+                <textarea asp-for="Description" rows="4" class="suggestion-input" style="resize:vertical;"></textarea>
+                <span asp-validation-for="Description" style="color:#ff7777;font-size:13px;"></span>
+            </div>
+            <div style="margin-bottom:22px;">
+                <label asp-for="HasSeenIt" style="display:block;margin-bottom:6px;"></label>
+                <select asp-for="HasSeenIt" class="suggestion-input">
+                    <option value="">Choose an answer</option>
+                    <option value="true">Yes</option>
+                    <option value="false">No</option>
+                </select>
+                <span asp-validation-for="HasSeenIt" style="color:#ff7777;font-size:13px;"></span>
+            </div>
+
+            <button type="submit" class="hero-btn" style="border:none;cursor:pointer;width:100%;">
+                Validate suggestion
+            </button>
+        </form>
+    </div>
+</section>

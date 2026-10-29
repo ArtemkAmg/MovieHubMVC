@@ -50,3 +50,5 @@ C:\Users\Artemka\Desktop\moviehub\MovieHubMvc\obj\Debug\net8.0\refint\MovieHubMv
 C:\Users\Artemka\Desktop\moviehub\MovieHubMvc\obj\Debug\net8.0\MovieHubMvc.pdb
 C:\Users\Artemka\Desktop\moviehub\MovieHubMvc\obj\Debug\net8.0\MovieHubMvc.genruntimeconfig.cache
 C:\Users\Artemka\Desktop\moviehub\MovieHubMvc\obj\Debug\net8.0\ref\MovieHubMvc.dll
+C:\Users\Artemka\Desktop\moviehub\MovieHubMvc\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\Artemka\Desktop\moviehub\MovieHubMvc\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll

@@ -26,6 +26,11 @@
                 @L["Nav_Files"]
             </a>
         </li>
+        <li>
+            <a asp-controller="MovieSuggestions" asp-action="Create" class="@(Model == "MovieSuggestions" ? "active" : "")">
+                @(System.Globalization.CultureInfo.CurrentUICulture.TwoLetterISOLanguageName == "uk" ? "Запропонувати фільм" : "Suggest a movie")
+            </a>
+        </li>
         <li class="nav-mobile-only">
             <a asp-controller="Favorites" asp-action="Index" class="@(Model == "Favorites" ? "active" : "")">
                 ❤ @L["Nav_Favorites"]
