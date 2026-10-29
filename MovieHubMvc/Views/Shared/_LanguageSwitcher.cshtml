@@ -1,0 +1,30 @@
+@using Microsoft.AspNetCore.Builder
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.Extensions.Options
+@using MovieHubMvc
+@inject IStringLocalizer<SharedResource> L
+@inject IOptions<RequestLocalizationOptions> LocOptions
+
+@{
+    var requestCulture = Context.Features.Get<IRequestCultureFeature>();
+    var current = requestCulture?.RequestCulture.UICulture.TwoLetterISOLanguageName ?? "en";
+    var returnUrl = string.IsNullOrEmpty(Context.Request.Path) ? "~/" : $"~{Context.Request.Path}{Context.Request.QueryString}";
+}
+
+<div class="language-switcher" style="display:flex;align-items:center;gap:6px;margin-left:10px;flex-shrink:0;">
+    <form asp-controller="Home" asp-action="SetLanguage" method="post" style="display:flex;gap:4px;align-items:center;margin:0;">
+        <input type="hidden" name="returnUrl" value="@returnUrl" />
+        <button type="submit" name="culture" value="en"
+                title="@L["Lang_English"]"
+                style="border:none;cursor:pointer;padding:6px 10px;border-radius:8px;font-size:13px;font-weight:600;
+                       background:@(current == "en" ? "#E50914" : "#1d1d1d");color:#fff;">
+            EN
+        </button>
+        <button type="submit" name="culture" value="uk"
+                title="@L["Lang_Ukrainian"]"
+                style="border:none;cursor:pointer;padding:6px 10px;border-radius:8px;font-size:13px;font-weight:600;
+                       background:@(current == "uk" ? "#E50914" : "#1d1d1d");color:#fff;">
+            UA
+        </button>
+    </form>
+</div>

@@ -1,10 +1,13 @@
+using System.Globalization;
+using Microsoft.AspNetCore.Localization;
+using Microsoft.Extensions.Localization;
+using MovieHubMvc.Localization;
 using MovieHubMvc.Middleware;
 using MovieHubMvc.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ===== File logging configuration (assignment: logs in Logs/ folder) =====
-// Built-in logger + write to daily files under ContentRoot/Logs
+// ===== File logging =====
 var logsPath = Path.Combine(builder.Environment.ContentRootPath, "Logs");
 Directory.CreateDirectory(logsPath);
 
@@ -13,19 +16,38 @@ builder.Logging.AddConsole();
 builder.Logging.AddProvider(new MovieHubMvc.Logging.FileLoggerProvider(
     Path.Combine(logsPath, "app-{date}.log")));
 
-builder.Services.AddControllersWithViews();
+// ===== Localization (shared JSON resources in /Resources) =====
+// JSON instead of .resx — avoids embedding issues; still "shared resources"
+builder.Services.AddSingleton<IStringLocalizerFactory, JsonStringLocalizerFactory>();
+builder.Services.AddTransient(typeof(IStringLocalizer<>), typeof(StringLocalizer<>));
 
-// Allow multipart uploads up to ~10 MB
+builder.Services.AddLocalization();
+
+builder.Services.AddControllersWithViews()
+    .AddViewLocalization()
+    .AddDataAnnotationsLocalization();
+
+builder.Services.Configure<RequestLocalizationOptions>(options =>
+{
+    var supported = new[]
+    {
+        new CultureInfo("en"),
+        new CultureInfo("uk")
+    };
+    options.DefaultRequestCulture = new RequestCulture("en");
+    options.SupportedCultures = supported;
+    options.SupportedUICultures = supported;
+    options.RequestCultureProviders.Insert(0, new CookieRequestCultureProvider());
+});
+
 builder.Services.Configure<Microsoft.AspNetCore.Http.Features.FormOptions>(o =>
 {
     o.MultipartBodyLengthLimit = 10 * 1024 * 1024;
 });
 
-// ===== Email configuration from appsettings.json =====
 builder.Services.Configure<EmailSettings>(
     builder.Configuration.GetSection("EmailSettings"));
 
-// Scoped — один екземпляр на HTTP-запит
 builder.Services.AddScoped<IEmailSender, EmailSender>();
 
 var app = builder.Build();
@@ -39,7 +61,8 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
-// Log every request: full URL + time + IP  →  Logs/requests-yyyy-MM-dd.log
+app.UseRequestLocalization();
+
 app.UseRequestLogging();
 
 app.UseRouting();

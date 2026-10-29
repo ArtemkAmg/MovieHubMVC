@@ -1,22 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="@System.Globalization.CultureInfo.CurrentUICulture.TwoLetterISOLanguageName">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - MovieHub</title>
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome (via LibMan) -->
     <link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css" />
-
-    <!-- Bootstrap (via LibMan) -->
     <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css" />
-
-    <!-- Template CSS -->
     <link rel="stylesheet" href="~/css/style.css" />
     <link rel="stylesheet" href="~/css/header.css" />
     <link rel="stylesheet" href="~/css/footer.css" />
@@ -36,42 +30,44 @@
                     <li>
                         <a asp-controller="Home" asp-action="Index"
                            class="@(ViewContext.RouteData.Values["Controller"]?.ToString() == "Home" ? "active" : "")">
-                            Home
+                            @L["Nav_Home"]
                         </a>
                     </li>
                     <li>
                         <a asp-controller="Movies" asp-action="Index"
                            class="@(ViewContext.RouteData.Values["Controller"]?.ToString() == "Movies" ? "active" : "")">
-                            Movies
+                            @L["Nav_Movies"]
                         </a>
                     </li>
                     <li>
                         <a asp-controller="Contact" asp-action="Index"
                            class="@(ViewContext.RouteData.Values["Controller"]?.ToString() == "Contact" ? "active" : "")">
-                            Contact
+                            @L["Nav_Contact"]
                         </a>
                     </li>
                     <li>
                         <a asp-controller="Files" asp-action="Index"
                            class="@(ViewContext.RouteData.Values["Controller"]?.ToString() == "Files" ? "active" : "")">
-                            Files
+                            @L["Nav_Files"]
                         </a>
                     </li>
                     <li class="nav-mobile-only">
                         <a asp-controller="Favorites" asp-action="Index"
                            class="@(ViewContext.RouteData.Values["Controller"]?.ToString() == "Favorites" ? "active" : "")">
-                            ❤ Favorites
+                            ❤ @L["Nav_Favorites"]
                         </a>
                     </li>
                 </ul>
 
-                <!-- Search first, then actions (favorite on far right) -->
                 <div class="search-box">
-                    <input type="text" id="searchInput" placeholder="Search movies..." autocomplete="off">
+                    <input type="text" id="searchInput" placeholder="@L["Search_Placeholder"]" autocomplete="off">
                 </div>
 
+                <!-- Language switcher (partial) -->
+                <partial name="_LanguageSwitcher" />
+
                 <div class="nav-actions">
-                    <a asp-controller="Favorites" asp-action="Index" class="favorite-btn" title="Favorites">
+                    <a asp-controller="Favorites" asp-action="Index" class="favorite-btn" title="@L["Nav_Favorites"]">
                         <i class="fa-regular fa-heart"></i>
                     </a>
                     <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false">
@@ -89,7 +85,7 @@
     <footer class="site-footer">
         <div class="container">
             <p class="mb-0 text-center" style="padding: 40px 0 20px; color: #888;">
-                © @DateTime.Now.Year MovieHub — Stream unlimited movies
+                © @DateTime.Now.Year MovieHub — @L["Footer_Text"]
             </p>
         </div>
     </footer>

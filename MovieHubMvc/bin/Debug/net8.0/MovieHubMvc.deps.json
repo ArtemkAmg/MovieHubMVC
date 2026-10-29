@@ -12,6 +12,11 @@
         },
         "runtime": {
           "MovieHubMvc.dll": {}
+        },
+        "resources": {
+          "uk/MovieHubMvc.resources.dll": {
+            "locale": "uk"
+          }
         }
       },
       "BouncyCastle.Cryptography/2.7.0": {

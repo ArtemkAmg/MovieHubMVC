@@ -8,7 +8,7 @@
     <div class="container">
 
         <div class="section-header" style="margin-bottom: 28px;">
-            <h2>Media Files</h2>
+            <h2>@L["Files_Title"]</h2>
         </div>
 
         <p style="color:#bdbdbd; margin-bottom: 24px; max-width: 640px;">
@@ -25,7 +25,7 @@
 
         <!-- Upload form (Razor, multipart) -->
         <div style="background:#1a1a1a;padding:28px;border-radius:16px;border:1px solid #2a2a2a;margin-bottom:40px;max-width:640px;">
-            <h3 style="margin-top:0;margin-bottom:18px;font-size:20px;">Upload file</h3>
+            <h3 style="margin-top:0;margin-bottom:18px;font-size:20px;">@L["Files_Upload"]</h3>
 
             <form asp-controller="Files" asp-action="Upload" method="post" enctype="multipart/form-data">
                 @Html.AntiForgeryToken()
@@ -47,7 +47,7 @@
                 </div>
 
                 <button type="submit" class="hero-btn" style="border:none;cursor:pointer;">
-                    <i class="fa-solid fa-cloud-arrow-up"></i> Upload
+                    <i class="fa-solid fa-cloud-arrow-up"></i> @L["Files_Button"]
                 </button>
             </form>
         </div>

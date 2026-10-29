@@ -10,19 +10,15 @@
     <div class="container">
         <div class="hero-content">
             <span class="hero-tag">
-                🎬 NEW RELEASE
+                🎬 @L["Hero_Tag"]
             </span>
 
             <h1>
-                Unlimited Movies,
-                <br>
-                Endless Entertainment.
+                @L["Hero_Title"]
             </h1>
 
             <p>
-                Discover thousands of blockbuster movies, award-winning TV shows,
-                and timeless classics. Stream your favorite entertainment anytime,
-                anywhere.
+                @L["Hero_Text"]
             </p>
 
             <div class="hero-info">
@@ -42,10 +38,10 @@
 
             <div class="hero-buttons">
                 <a asp-controller="Movies" asp-action="Index" class="hero-btn">
-                    Explore Movies
+                    @L["Hero_Explore"]
                 </a>
                 <a href="#" class="secondary-btn">
-                    Watch Trailer
+                    @L["Hero_Trailer"]
                 </a>
             </div>
         </div>
@@ -55,7 +51,7 @@
 <section class="recommended">
     <div class="container">
         <div class="section-header">
-            <h2>Recommended Movies</h2>
+            <h2>@L["Section_Recommended"]</h2>
             <div class="slider-buttons">
                 <button id="prevSlide" type="button">
                     <i class="fa-solid fa-chevron-left"></i>
@@ -76,9 +72,9 @@
 <section class="trending" id="trending">
     <div class="container">
         <div class="section-header">
-            <h2>Trending Movies</h2>
+            <h2>@L["Section_Trending"]</h2>
             <div class="section-actions">
-                <a asp-controller="Movies" asp-action="Index">View All</a>
+                <a asp-controller="Movies" asp-action="Index">@L["View_All"]</a>
                 <button id="filterBtn" class="filter-btn" type="button">
                     <i class="fa-solid fa-sliders"></i>
                 </button>
