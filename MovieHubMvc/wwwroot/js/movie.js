@@ -51,7 +51,7 @@ if (!movie) {
             <div class="movie-left">
 
                 <img
-                    src="${movie.poster}"
+                    src="${movie.poster}" onerror="this.onerror=null;this.src='/images/featured/poster-unavailable.svg'"
                     alt="${movie.title}"
                     class="movie-poster"
                 >

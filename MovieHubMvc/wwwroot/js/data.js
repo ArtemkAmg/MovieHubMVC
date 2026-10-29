@@ -9,8 +9,8 @@ const movies = [
         director: "Christopher Nolan",
         cast: ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain", "Michael Caine"],
         description: "A team of explorers travels through a wormhole in space in an attempt to ensure humanity's survival.",
-        poster: "images/featured/interstellar.jpg",
-        backdrop: "images/featured/interstellar.jpg",
+        poster: "/images/featured/interstellar.jpg",
+        backdrop: "/images/featured/interstellar.jpg",
         trailerUrl: "https://www.youtube.com/embed/zSWdZVtXT7E"
     },
     {
@@ -23,8 +23,8 @@ const movies = [
         director: "Matt Reeves",
         cast: ["Robert Pattinson", "Zoe Kravitz", "Paul Dano", "Colin Farrell"],
         description: "When a sadistic serial killer begins murdering key political figures in Gotham, Batman investigates the city's corruption.",
-        poster: "images/featured/batman.jpg",
-        backdrop: "images/featured/batman.jpg",
+        poster: "/images/featured/batman.jpg",
+        backdrop: "/images/featured/batman.jpg",
         trailerUrl: "https://www.youtube.com/embed/mqqft2x_Aa4"
     },
     {
@@ -37,8 +37,8 @@ const movies = [
         director: "Denis Villeneuve",
         cast: ["Timothee Chalamet", "Zendaya", "Rebecca Ferguson", "Oscar Isaac"],
         description: "Paul Atreides must travel to the most dangerous planet in the universe to ensure the future of his family.",
-        poster: "images/featured/dune.jpg",
-        backdrop: "images/featured/dune.jpg",
+        poster: "/images/featured/dune.jpg",
+        backdrop: "/images/featured/dune.jpg",
         trailerUrl: "https://www.youtube.com/embed/n9xhJrPRl44"
     },
     {
@@ -51,8 +51,8 @@ const movies = [
         director: "Christopher Nolan",
         cast: ["Cillian Murphy", "Emily Blunt", "Matt Damon", "Robert Downey Jr."],
         description: "The story of J. Robert Oppenheimer and his role in the development of the atomic bomb.",
-        poster: "images/featured/oppenheimer.jpg",
-        backdrop: "images/featured/oppenheimer.jpg",
+        poster: "/images/featured/oppenheimer.jpg",
+        backdrop: "/images/featured/oppenheimer.jpg",
         trailerUrl: "https://www.youtube.com/embed/uYPbbksJxIg"
     },
     {
@@ -65,8 +65,8 @@ const movies = [
         director: "Christopher Nolan",
         cast: ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page", "Tom Hardy"],
         description: "A thief who steals corporate secrets through dream-sharing technology is tasked with planting an idea into a CEO's mind.",
-        poster: "images/featured/inception.jpg",
-        backdrop: "images/featured/inception.jpg",
+        poster: "/images/featured/inception.jpg",
+        backdrop: "/images/featured/inception.jpg",
         trailerUrl: "https://www.youtube.com/embed/YoHD9XEInc0"
     },
     {
@@ -79,8 +79,8 @@ const movies = [
         director: "Todd Phillips",
         cast: ["Joaquin Phoenix", "Robert De Niro", "Zazie Beetz", "Frances Conroy"],
         description: "A mentally troubled comedian embarks on a downward spiral that leads to the creation of an iconic villain.",
-        poster: "images/featured/joker.jpg",
-        backdrop: "images/featured/joker_bg.jpg",
+        poster: "/images/featured/joker.jpg",
+        backdrop: "/images/featured/joker_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/zAGVQLHvwOY"
     },
     {
@@ -93,8 +93,8 @@ const movies = [
         director: "Christopher Nolan",
         cast: ["Christian Bale", "Heath Ledger", "Aaron Eckhart", "Michael Caine"],
         description: "When the Joker wreaks havoc on Gotham, Batman must accept one of the greatest tests of his ability to fight injustice.",
-        poster: "images/featured/the-dark-knight.jpg",
-        backdrop: "images/featured/the-dark-knight.jpg",
+        poster: "/images/featured/the-dark-knight.jpg",
+        backdrop: "/images/featured/the-dark-knight.jpg",
         trailerUrl: "https://www.youtube.com/embed/EXeTwQWrcwY"
     },
     {
@@ -107,8 +107,8 @@ const movies = [
         director: "James Cameron",
         cast: ["Sam Worthington", "Zoe Saldana", "Sigourney Weaver", "Stephen Lang"],
         description: "A paraplegic Marine on Pandora becomes torn between following orders and protecting the world he feels is his home.",
-        poster: "images/featured/avatar.jpg",
-        backdrop: "images/featured/avatar.jpg",
+        poster: "/images/featured/avatar.jpg",
+        backdrop: "/images/featured/avatar.jpg",
         trailerUrl: "https://www.youtube.com/embed/5PSNL1qE6VY"
     },
     {
@@ -121,8 +121,8 @@ const movies = [
         director: "The Wachowskis",
         cast: ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss", "Hugo Weaving"],
         description: "A computer hacker learns about the true nature of his reality and his role in the war against its controllers.",
-        poster: "images/featured/matrix.jpg",
-        backdrop: "images/featured/matrix.jpg",
+        poster: "/images/featured/matrix.jpg",
+        backdrop: "/images/featured/matrix.jpg",
         trailerUrl: "https://www.youtube.com/embed/vKQi3bBA1y8"
     },
     {
@@ -135,8 +135,8 @@ const movies = [
         director: "David Fincher",
         cast: ["Brad Pitt", "Edward Norton", "Helena Bonham Carter", "Meat Loaf"],
         description: "An insomniac office worker and a soap maker form an underground fight club that evolves into something more.",
-        poster: "images/featured/fight-club.jpg",
-        backdrop: "images/featured/fight-club.jpg",
+        poster: "/images/featured/fight-club.jpg",
+        backdrop: "/images/featured/fight-club.jpg",
         trailerUrl: "https://www.youtube.com/embed/qtRKdVmRISc"
     },
     {
@@ -149,8 +149,8 @@ const movies = [
         director: "Ridley Scott",
         cast: ["Russell Crowe", "Joaquin Phoenix", "Connie Nielsen", "Oliver Reed"],
         description: "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family.",
-        poster: "images/featured/gladiator.jpg",
-        backdrop: "images/featured/gladiator.jpg",
+        poster: "/images/featured/gladiator.jpg",
+        backdrop: "/images/featured/gladiator.jpg",
         trailerUrl: "https://www.youtube.com/embed/owK1qxDselE"
     },
     {
@@ -163,8 +163,8 @@ const movies = [
         director: "Frank Darabont",
         cast: ["Tim Robbins", "Morgan Freeman", "Bob Gunton", "William Sadler"],
         description: "Two convicts form a friendship over years, seeking solace and eventual redemption through acts of common decency.",
-        poster: "images/featured/shawshank.jpg",
-        backdrop: "images/featured/shawshank.jpg",
+        poster: "/images/featured/shawshank.jpg",
+        backdrop: "/images/featured/shawshank.jpg",
         trailerUrl: "https://www.youtube.com/embed/6hB3S9bIaco"
     },
     {
@@ -177,8 +177,8 @@ const movies = [
         director: "Francis Ford Coppola",
         cast: ["Marlon Brando", "Al Pacino", "James Caan", "Robert Duvall"],
         description: "The aging patriarch of an organized crime dynasty transfers control of his empire to his reluctant son.",
-        poster: "images/featured/godfather.jpg",
-        backdrop: "images/featured/godfather.jpg",
+        poster: "/images/featured/godfather.jpg",
+        backdrop: "/images/featured/godfather.jpg",
         trailerUrl: "https://www.youtube.com/embed/sY1S34973zA"
     },
     {
@@ -191,8 +191,8 @@ const movies = [
         director: "Frank Darabont",
         cast: ["Tom Hanks", "David Morse", "Michael Clarke Duncan", "Bonnie Hunt"],
         description: "Death Row guards are affected by a black man accused of child murder who has a mysterious gift.",
-        poster: "images/featured/green-mile.jpg",
-        backdrop: "images/featured/green-mile.jpg",
+        poster: "/images/featured/green-mile.jpg",
+        backdrop: "/images/featured/green-mile.jpg",
         trailerUrl: "https://www.youtube.com/embed/Ki4haFrqSrw"
     },
     {
@@ -205,8 +205,8 @@ const movies = [
         director: "David Fincher",
         cast: ["Brad Pitt", "Morgan Freeman", "Gwyneth Paltrow", "Kevin Spacey"],
         description: "Two detectives hunt a serial killer who uses the seven deadly sins as his motives.",
-        poster: "images/featured/se7en.jpg",
-        backdrop: "images/featured/se7en.jpg",
+        poster: "/images/featured/se7en.jpg",
+        backdrop: "/images/featured/se7en.jpg",
         trailerUrl: "https://www.youtube.com/embed/znmZoVkCjpI"
     },
     {
@@ -219,8 +219,8 @@ const movies = [
         director: "Patrick Hughes",
         cast: ["Kevin Hart", "Woody Harrelson", "Kaley Cuoco", "Jasmine Mathews"],
         description: "The world's deadliest assassin and New York's biggest screw-up are mistaken for each other.",
-        poster: "images/featured/toronto.jpg",
-        backdrop: "images/featured/toronto.jpg",
+        poster: "/images/featured/toronto.jpg",
+        backdrop: "/images/featured/toronto.jpg",
         trailerUrl: "https://www.youtube.com/embed/urqy8DscKyY"
     },
     {
@@ -233,8 +233,8 @@ const movies = [
         director: "Patrick Hughes",
         cast: ["Ryan Reynolds", "Samuel L. Jackson", "Gary Oldman", "Salma Hayek"],
         description: "The world's top protection agent is forced to team up with a hitman to save a key witness.",
-        poster: "images/featured/hitmans-bodyguard.jpg",
-        backdrop: "images/featured/hitmans-bodyguard.jpg",
+        poster: "/images/featured/hitmans-bodyguard.jpg",
+        backdrop: "/images/featured/hitmans-bodyguard.jpg",
         trailerUrl: "https://www.youtube.com/embed/F4Ax9u5xq6g"
     },
     {
@@ -247,8 +247,8 @@ const movies = [
         director: "F. Gary Gray",
         cast: ["Chris Hemsworth", "Tessa Thompson", "Kumail Nanjiani", "Liam Neeson"],
         description: "The Men in Black tackle their biggest threat: a mole in the organization.",
-        poster: "images/featured/mbi.jpg",
-        backdrop: "images/featured/mbi_bg.jpg",
+        poster: "/images/featured/mbi.jpg",
+        backdrop: "/images/featured/mbi_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/BV-WEb2oxLk"
     },
     {
@@ -261,8 +261,8 @@ const movies = [
         director: "Damien Chazelle",
         cast: ["Miles Teller", "J.K. Simmons", "Paul Reiser", "Melissa Benoist"],
         description: "A promising young drummer enrolls at a cut-throat music conservatory under a ruthless instructor.",
-        poster: "images/featured/whiplash.jpg",
-        backdrop: "images/featured/whiplash.jpg",
+        poster: "/images/featured/whiplash.jpg",
+        backdrop: "/images/featured/whiplash.jpg",
         trailerUrl: "https://www.youtube.com/embed/7d_jQycdQGo"
     },
     {
@@ -275,8 +275,8 @@ const movies = [
         director: "Quentin Tarantino",
         cast: ["John Travolta", "Samuel L. Jackson", "Uma Thurman", "Bruce Willis"],
         description: "The lives of two mob hitmen, a boxer, a gangster's wife, and diner bandits intertwine in four tales of violence and redemption.",
-        poster: "images/featured/pulp-fiction.jpg",
-        backdrop: "images/featured/pulp-fiction_bg.jpg",
+        poster: "/images/featured/pulp-fiction.jpg",
+        backdrop: "/images/featured/pulp-fiction_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/s7EdQ4FqbhY"
     },
     {
@@ -289,8 +289,8 @@ const movies = [
         director: "Robert Zemeckis",
         cast: ["Tom Hanks", "Robin Wright", "Gary Sinise", "Sally Field"],
         description: "The history of the United States unfolds through the perspective of an Alabama man with an IQ of 75.",
-        poster: "images/featured/forrest-gump.jpg",
-        backdrop: "images/featured/forrest-gump_bg.jpg",
+        poster: "/images/featured/forrest-gump.jpg",
+        backdrop: "/images/featured/forrest-gump_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/bLvqoHysUto"
     },
     {
@@ -303,8 +303,8 @@ const movies = [
         director: "Peter Jackson",
         cast: ["Elijah Wood", "Ian McKellen", "Orlando Bloom", "Viggo Mortensen"],
         description: "A meek Hobbit and eight companions set out to destroy the One Ring and save Middle-earth.",
-        poster: "images/featured/lotr-fellowship.jpg",
-        backdrop: "images/featured/lotr-fellowship_bg.jpg",
+        poster: "/images/featured/lotr-fellowship.jpg",
+        backdrop: "/images/featured/lotr-fellowship_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/V75dMMIX2kE"
     },
     {
@@ -317,8 +317,8 @@ const movies = [
         director: "Peter Jackson",
         cast: ["Elijah Wood", "Ian McKellen", "Viggo Mortensen", "Orlando Bloom"],
         description: "Frodo and Sam edge closer to Mordor with Gollum while the fellowship makes a stand against Saruman.",
-        poster: "images/featured/lotr-two-towers.jpg",
-        backdrop: "images/featured/lotr-two-towers_bg.jpg",
+        poster: "/images/featured/lotr-two-towers.jpg",
+        backdrop: "/images/featured/lotr-two-towers_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/LbfMDwc4azU"
     },
     {
@@ -331,8 +331,8 @@ const movies = [
         director: "Peter Jackson",
         cast: ["Elijah Wood", "Viggo Mortensen", "Ian McKellen", "Orlando Bloom"],
         description: "Gandalf and Aragorn lead Men against Sauron while Frodo and Sam approach Mount Doom.",
-        poster: "images/featured/lotr-return.jpg",
-        backdrop: "images/featured/lotr-return_bg.jpg",
+        poster: "/images/featured/lotr-return.jpg",
+        backdrop: "/images/featured/lotr-return_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/r5X-hFf6Bwo"
     },
     {
@@ -345,8 +345,8 @@ const movies = [
         director: "Steven Spielberg",
         cast: ["Liam Neeson", "Ralph Fiennes", "Ben Kingsley", "Caroline Goodall"],
         description: "Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
-        poster: "images/featured/schindlers-list.jpg",
-        backdrop: "images/featured/schindlers-list_bg.jpg",
+        poster: "/images/featured/schindlers-list.jpg",
+        backdrop: "/images/featured/schindlers-list_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/gG22XNhtnoY"
     },
     {
@@ -359,8 +359,8 @@ const movies = [
         director: "Francis Ford Coppola",
         cast: ["Al Pacino", "Robert De Niro", "Robert Duvall", "Diane Keaton"],
         description: "The early life of Vito Corleone is portrayed while his son Michael expands the family crime syndicate.",
-        poster: "images/featured/godfather-2.jpg",
-        backdrop: "images/featured/godfather-2_bg.jpg",
+        poster: "/images/featured/godfather-2.jpg",
+        backdrop: "/images/featured/godfather-2_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/9O1Iy9od7-A"
     },
     {
@@ -373,8 +373,8 @@ const movies = [
         director: "Sidney Lumet",
         cast: ["Henry Fonda", "Lee J. Cobb", "Martin Balsam", "John Fiedler"],
         description: "A jury is frustrated by one member whose caution forces them to carefully reconsider the evidence.",
-        poster: "images/featured/12-angry-men.jpg",
-        backdrop: "images/featured/12-angry-men_bg.jpg",
+        poster: "/images/featured/12-angry-men.jpg",
+        backdrop: "/images/featured/12-angry-men_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/TEN-2uTi2s0"
     },
     {
@@ -387,8 +387,8 @@ const movies = [
         director: "Martin Scorsese",
         cast: ["Robert De Niro", "Ray Liotta", "Joe Pesci", "Lorraine Bracco"],
         description: "The story of Henry Hill and his life in the mob with partners Jimmy Conway and Tommy DeVito.",
-        poster: "images/featured/goodfellas.jpg",
-        backdrop: "images/featured/goodfellas_bg.jpg",
+        poster: "/images/featured/goodfellas.jpg",
+        backdrop: "/images/featured/goodfellas_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/qo5jJpHtI1Y"
     },
     {
@@ -401,8 +401,8 @@ const movies = [
         director: "Jonathan Demme",
         cast: ["Jodie Foster", "Anthony Hopkins", "Scott Glenn", "Ted Levine"],
         description: "A young FBI cadet must receive help from an incarcerated cannibal killer to catch another serial killer.",
-        poster: "images/featured/silence-of-the-lambs.jpg",
-        backdrop: "images/featured/silence-of-the-lambs_bg.jpg",
+        poster: "/images/featured/silence-of-the-lambs.jpg",
+        backdrop: "/images/featured/silence-of-the-lambs_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/W6Mm8Sbe__o"
     },
     {
@@ -415,8 +415,8 @@ const movies = [
         director: "Steven Spielberg",
         cast: ["Tom Hanks", "Matt Damon", "Tom Sizemore", "Edward Burns"],
         description: "U.S. soldiers go behind enemy lines after Normandy to retrieve a paratrooper whose brothers were killed.",
-        poster: "images/featured/saving-private-ryan.jpg",
-        backdrop: "images/featured/saving-private-ryan_bg.jpg",
+        poster: "/images/featured/saving-private-ryan.jpg",
+        backdrop: "/images/featured/saving-private-ryan_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/9CiW_DgxVnA"
     },
     {
@@ -429,8 +429,8 @@ const movies = [
         director: "Martin Scorsese",
         cast: ["Leonardo DiCaprio", "Matt Damon", "Jack Nicholson", "Mark Wahlberg"],
         description: "An undercover cop and a mole try to identify each other while infiltrating an Irish gang in Boston.",
-        poster: "images/featured/the-departed.jpg",
-        backdrop: "images/featured/the-departed_bg.jpg",
+        poster: "/images/featured/the-departed.jpg",
+        backdrop: "/images/featured/the-departed_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/iojcoh_l490"
     },
     {
@@ -443,8 +443,8 @@ const movies = [
         director: "Christopher Nolan",
         cast: ["Christian Bale", "Hugh Jackman", "Scarlett Johansson", "Michael Caine"],
         description: "Two stage magicians engage in a battle to create the ultimate illusion, sacrificing everything.",
-        poster: "images/featured/the-prestige.jpg",
-        backdrop: "images/featured/the-prestige_bg.jpg",
+        poster: "/images/featured/the-prestige.jpg",
+        backdrop: "/images/featured/the-prestige_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/RLtaA9fFVXU"
     },
     {
@@ -457,8 +457,8 @@ const movies = [
         director: "Quentin Tarantino",
         cast: ["Jamie Foxx", "Christoph Waltz", "Leonardo DiCaprio", "Kerry Washington"],
         description: "A freed slave sets out to rescue his wife from a brutal Mississippi plantation-owner.",
-        poster: "images/featured/django-unchained.jpg",
-        backdrop: "images/featured/django-unchained_bg.jpg",
+        poster: "/images/featured/django-unchained.jpg",
+        backdrop: "/images/featured/django-unchained_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/eUdM9vrCbow"
     },
     {
@@ -471,8 +471,8 @@ const movies = [
         director: "Quentin Tarantino",
         cast: ["Brad Pitt", "Diane Kruger", "Eli Roth", "Melanie Laurent"],
         description: "In Nazi-occupied France, a plan to assassinate Nazi leaders coincides with a theatre owner's revenge.",
-        poster: "images/featured/inglourious-basterds.jpg",
-        backdrop: "images/featured/inglourious-basterds_bg.jpg",
+        poster: "/images/featured/inglourious-basterds.jpg",
+        backdrop: "/images/featured/inglourious-basterds_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/KnrBPnUEMAM"
     },
     {
@@ -485,8 +485,8 @@ const movies = [
         director: "Martin Scorsese",
         cast: ["Leonardo DiCaprio", "Jonah Hill", "Margot Robbie", "Matthew McConaughey"],
         description: "The rise and fall of Jordan Belfort, from wealthy stockbroker to federal crime and corruption.",
-        poster: "images/featured/wolf-of-wall-street.jpg",
-        backdrop: "images/featured/wolf-of-wall-street_bg.jpg",
+        poster: "/images/featured/wolf-of-wall-street.jpg",
+        backdrop: "/images/featured/wolf-of-wall-street_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/iszwuX1AK6A"
     },
     {
@@ -499,8 +499,8 @@ const movies = [
         director: "Shawn Levy",
         cast: ["Hugh Jackman", "Dakota Goyo", "Evangeline Lilly", "Kevin Durand"],
         description: "Greed and class discrimination threaten the relationship between the wealthy Park family and the destitute Kim clan.",
-        poster: "images/featured/real-steel.jpg",
-        backdrop: "images/featured/real-steel_bg.jpg",
+        poster: "/images/featured/real-steel.jpg",
+        backdrop: "/images/featured/real-steel_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/5xH0HfJHsaY"
     },
     {
@@ -513,8 +513,8 @@ const movies = [
         director: "Jordan Peele",
         cast: ["Daniel Kaluuya", "Allison Williams", "Bradley Whitford", "Catherine Keener"],
         description: "A young African-American visits his white girlfriend's parents and his uneasiness reaches a boiling point.",
-        poster: "images/featured/get-out.jpg",
-        backdrop: "images/featured/get-out_bg.jpg",
+        poster: "/images/featured/get-out.jpg",
+        backdrop: "/images/featured/get-out_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/sRfnevzM9kQ"
     },
     {
@@ -527,8 +527,8 @@ const movies = [
         director: "George Miller",
         cast: ["Tom Hardy", "Charlize Theron", "Nicholas Hoult", "Hugh Keays-Byrne"],
         description: "In a post-apocalyptic wasteland, a woman rebels against a tyrant with the help of prisoners and Max.",
-        poster: "images/featured/mad-max-fury-road.jpg",
-        backdrop: "images/featured/mad-max-fury-road_bg.jpg",
+        poster: "/images/featured/mad-max-fury-road.jpg",
+        backdrop: "/images/featured/mad-max-fury-road_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/hA6hldpSTF8"
     },
     {
@@ -541,8 +541,8 @@ const movies = [
         director: "Chad Stahelski",
         cast: ["Keanu Reeves", "Michael Nyqvist", "Alfie Allen", "Willem Dafoe"],
         description: "An ex-hitman comes out of retirement to track down the gangsters who killed his dog.",
-        poster: "images/featured/john-wick.jpg",
-        backdrop: "images/featured/john-wick_bg.jpg",
+        poster: "/images/featured/john-wick.jpg",
+        backdrop: "/images/featured/john-wick_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/2AUmvWm5ZDQ"
     },
     {
@@ -555,8 +555,8 @@ const movies = [
         director: "Chad Stahelski",
         cast: ["Keanu Reeves", "Riccardo Scamarcio", "Ian McShane", "Ruby Rose"],
         description: "John Wick discovers a large bounty has been put on his life after repaying a debt.",
-        poster: "images/featured/john-wick-2.jpg",
-        backdrop: "images/featured/john-wick-2_bg.jpg",
+        poster: "/images/featured/john-wick-2.jpg",
+        backdrop: "/images/featured/john-wick-2_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/XGk2EfbCYLY"
     },
     {
@@ -569,8 +569,8 @@ const movies = [
         director: "Chad Stahelski",
         cast: ["Keanu Reeves", "Halle Berry", "Ian McShane", "Laurence Fishburne"],
         description: "John Wick is on the run with a $14 million price tag after killing a member of the assassins' guild.",
-        poster: "images/featured/john-wick-3.jpg",
-        backdrop: "images/featured/john-wick-3_bg.jpg",
+        poster: "/images/featured/john-wick-3.jpg",
+        backdrop: "/images/featured/john-wick-3_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/M7XM597XO94"
     },
     {
@@ -583,8 +583,8 @@ const movies = [
         director: "Chad Stahelski",
         cast: ["Keanu Reeves", "Donnie Yen", "Bill Skarsgard", "Laurence Fishburne"],
         description: "John Wick uncovers a path to defeating The High Table and earning his freedom.",
-        poster: "images/featured/john-wick-4.jpg",
-        backdrop: "images/featured/john-wick-4_bg.jpg",
+        poster: "/images/featured/john-wick-4.jpg",
+        backdrop: "/images/featured/john-wick-4_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/qEVUtrk8_B4"
     },
     {
@@ -597,8 +597,8 @@ const movies = [
         director: "Jon Watts",
         cast: ["Tom Holland", "Zendaya", "Benedict Cumberbatch", "Jacob Batalon"],
         description: "With Spider-Man's identity revealed, a spell gone wrong brings dangerous foes from other worlds.",
-        poster: "images/featured/spiderman-nwh.jpg",
-        backdrop: "images/featured/spiderman-nwh_bg.jpg",
+        poster: "/images/featured/spiderman-nwh.jpg",
+        backdrop: "/images/featured/spiderman-nwh_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/JfVOs4VSpmA"
     },
     {
@@ -611,8 +611,8 @@ const movies = [
         director: "Joaquim Dos Santos",
         cast: ["Shameik Moore", "Hailee Steinfeld", "Brian Tyree Henry", "Luna Lauren Velez"],
         description: "Miles Morales catapults across the Multiverse and meets a team of Spider-People.",
-        poster: "images/featured/spiderman-atsv.jpg",
-        backdrop: "images/featured/spiderman-atsv_bg.jpg",
+        poster: "/images/featured/spiderman-atsv.jpg",
+        backdrop: "/images/featured/spiderman-atsv_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/cqGjhVJWtEg"
     },
     {
@@ -625,8 +625,8 @@ const movies = [
         director: "Anthony Russo, Joe Russo",
         cast: ["Robert Downey Jr.", "Chris Evans", "Mark Ruffalo", "Chris Hemsworth"],
         description: "The Avengers assemble once more to reverse Thanos' actions and restore balance to the universe.",
-        poster: "images/featured/avengers-endgame.jpg",
-        backdrop: "images/featured/avengers-endgame_bg.jpg",
+        poster: "/images/featured/avengers-endgame.jpg",
+        backdrop: "/images/featured/avengers-endgame_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/TcMBFSGVi1c"
     },
     {
@@ -639,8 +639,8 @@ const movies = [
         director: "Anthony Russo, Joe Russo",
         cast: ["Robert Downey Jr.", "Chris Hemsworth", "Mark Ruffalo", "Chris Evans"],
         description: "The Avengers and allies must sacrifice all to defeat Thanos before his blitz ends the universe.",
-        poster: "images/featured/avengers-infinity-war.jpg",
-        backdrop: "images/featured/avengers-infinity-war_bg.jpg",
+        poster: "/images/featured/avengers-infinity-war.jpg",
+        backdrop: "/images/featured/avengers-infinity-war_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/6ZfuNTqbHE8"
     },
     {
@@ -653,8 +653,8 @@ const movies = [
         director: "Joss Whedon",
         cast: ["Robert Downey Jr.", "Chris Evans", "Scarlett Johansson", "Mark Ruffalo"],
         description: "Earth's mightiest heroes must fight as a team to stop Loki and his alien army.",
-        poster: "images/featured/the-avengers.jpg",
-        backdrop: "images/featured/the-avengers_bg.jpg",
+        poster: "/images/featured/the-avengers.jpg",
+        backdrop: "/images/featured/the-avengers_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/eOrNdBpGMv8"
     },
     {
@@ -667,8 +667,8 @@ const movies = [
         director: "Jon Favreau",
         cast: ["Robert Downey Jr.", "Gwyneth Paltrow", "Terrence Howard", "Jeff Bridges"],
         description: "Tony Stark creates a weaponized suit of armor after being held captive, to fight evil.",
-        poster: "images/featured/iron-man.jpg",
-        backdrop: "images/featured/iron-man_bg.jpg",
+        poster: "/images/featured/iron-man.jpg",
+        backdrop: "/images/featured/iron-man_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/8ugaeA-nMTc"
     },
     {
@@ -681,8 +681,8 @@ const movies = [
         director: "Ryan Coogler",
         cast: ["Chadwick Boseman", "Michael B. Jordan", "Lupita Nyong'o", "Danai Gurira"],
         description: "T'Challa must lead Wakanda and confront a challenger from his country's past.",
-        poster: "images/featured/black-panther.jpg",
-        backdrop: "images/featured/black-panther_bg.jpg",
+        poster: "/images/featured/black-panther.jpg",
+        backdrop: "/images/featured/black-panther_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/xjDjIWPvc98"
     },
     {
@@ -695,8 +695,8 @@ const movies = [
         director: "James Gunn",
         cast: ["Chris Pratt", "Zoe Saldana", "Dave Bautista", "Vin Diesel"],
         description: "A group of intergalactic criminals must stop a fanatical warrior from purging the universe.",
-        poster: "images/featured/guardians-of-the-galaxy.jpg",
-        backdrop: "images/featured/guardians-of-the-galaxy_bg.jpg",
+        poster: "/images/featured/guardians-of-the-galaxy.jpg",
+        backdrop: "/images/featured/guardians-of-the-galaxy_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/d96cjJhvlMA"
     },
     {
@@ -709,8 +709,8 @@ const movies = [
         director: "Taika Waititi",
         cast: ["Chris Hemsworth", "Tom Hiddleston", "Cate Blanchett", "Mark Ruffalo"],
         description: "Thor must prevent Hela from destroying Asgard while imprisoned on Sakaar.",
-        poster: "images/featured/thor-ragnarok.jpg",
-        backdrop: "images/featured/thor-ragnarok_bg.jpg",
+        poster: "/images/featured/thor-ragnarok.jpg",
+        backdrop: "/images/featured/thor-ragnarok_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/ue80QwXMRHg"
     },
     {
@@ -723,8 +723,8 @@ const movies = [
         director: "Scott Derrickson",
         cast: ["Benedict Cumberbatch", "Chiwetel Ejiofor", "Rachel McAdams", "Benedict Wong"],
         description: "A brilliant neurosurgeon is drawn into the world of the mystic arts.",
-        poster: "images/featured/doctor-strange.jpg",
-        backdrop: "images/featured/doctor-strange_bg.jpg",
+        poster: "/images/featured/doctor-strange.jpg",
+        backdrop: "/images/featured/doctor-strange_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/HSzx-zryEgM"
     },
     {
@@ -737,8 +737,8 @@ const movies = [
         director: "Tim Miller",
         cast: ["Ryan Reynolds", "Morena Baccarin", "T.J. Miller", "Ed Skrein"],
         description: "A wisecracking mercenary becomes immortal and scarred, then hunts the man who ruined him.",
-        poster: "images/featured/deadpool.jpg",
-        backdrop: "images/featured/deadpool_bg.jpg",
+        poster: "/images/featured/deadpool.jpg",
+        backdrop: "/images/featured/deadpool_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/ONHBaC-553M"
     },
     {
@@ -751,8 +751,8 @@ const movies = [
         director: "David Leitch",
         cast: ["Ryan Reynolds", "Josh Brolin", "Morena Baccarin", "Zazie Beetz"],
         description: "Deadpool assembles a team to protect a young boy from the time-traveling cyborg Cable.",
-        poster: "images/featured/deadpool-2.jpg",
-        backdrop: "images/featured/deadpool-2_bg.jpg",
+        poster: "/images/featured/deadpool-2.jpg",
+        backdrop: "/images/featured/deadpool-2_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/D86RtevtfrA"
     },
     {
@@ -765,8 +765,8 @@ const movies = [
         director: "James Mangold",
         cast: ["Hugh Jackman", "Patrick Stewart", "Dafne Keen", "Boyd Holbrook"],
         description: "Aging Logan cares for Professor X while helping refugees in a future where mutants are nearly extinct.",
-        poster: "images/featured/logan.jpg",
-        backdrop: "images/featured/logan_bg.jpg",
+        poster: "/images/featured/logan.jpg",
+        backdrop: "/images/featured/logan_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/Div0iP65aZo"
     },
     {
@@ -779,8 +779,8 @@ const movies = [
         director: "Ron Howard",
         cast: ["Daniel Brühl", "Chris Hemsworth", "Alexandra Maria Lara", "Olivia Wilde"],
         description: "James Hunt and Niki Lauda, two extremely skilled Formula One racers, have an intense rivalry with each other. However, it is their enmity that pushes them to their limits.",
-        poster: "images/featured/rush.jpg",
-        backdrop: "images/featured/rush_bg.jpg",
+        poster: "/images/featured/rush.jpg",
+        backdrop: "/images/featured/rush_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/4XA73ni9eVs"
     },
     {
@@ -793,8 +793,8 @@ const movies = [
         director: "David Fincher",
         cast: ["Ben Affleck", "Rosamund Pike", "Neil Patrick Harris", "Tyler Perry"],
         description: "A man's wife disappears and the media spotlight turns on him as a suspect.",
-        poster: "images/featured/gone-girl.jpg",
-        backdrop: "images/featured/gone-girl_bg.jpg",
+        poster: "/images/featured/gone-girl.jpg",
+        backdrop: "/images/featured/gone-girl_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/2-ygwuybgwA"
     },
     {
@@ -807,8 +807,8 @@ const movies = [
         director: "David Fincher",
         cast: ["Jake Gyllenhaal", "Robert Downey Jr.", "Mark Ruffalo", "Anthony Edwards"],
         description: "A San Francisco cartoonist becomes obsessed with tracking down the Zodiac Killer.",
-        poster: "images/featured/zodiac.jpg",
-        backdrop: "images/featured/zodiac_bg.jpg",
+        poster: "/images/featured/zodiac.jpg",
+        backdrop: "/images/featured/zodiac_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/yNncHPl1UXg"
     },
     {
@@ -821,8 +821,8 @@ const movies = [
         director: "Joel Coen, Ethan Coen",
         cast: ["Tommy Lee Jones", "Javier Bardem", "Josh Brolin", "Woody Harrelson"],
         description: "A hunter stumbles upon a drug deal gone wrong and more than two million dollars in cash.",
-        poster: "images/featured/no-country.jpg",
-        backdrop: "images/featured/no-country_bg.jpg",
+        poster: "/images/featured/no-country.jpg",
+        backdrop: "/images/featured/no-country_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/38A__WT3-o0"
     },
     {
@@ -835,8 +835,8 @@ const movies = [
         director: "Wes Anderson",
         cast: ["Ralph Fiennes", "F. Murray Abraham", "Mathieu Amalric", "Adrien Brody"],
         description: "A writer hears the story of a lobby boy and an exceptional concierge at a grand hotel.",
-        poster: "images/featured/grand-budapest.jpg",
-        backdrop: "images/featured/grand-budapest_bg.jpg",
+        poster: "/images/featured/grand-budapest.jpg",
+        backdrop: "/images/featured/grand-budapest_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/1Fg5iWmQjwk"
     },
     {
@@ -849,8 +849,8 @@ const movies = [
         director: "Damien Chazelle",
         cast: ["Ryan Gosling", "Emma Stone", "John Legend", "Rosemarie DeWitt"],
         description: "A pianist and an actress fall in love in Los Angeles while chasing their dreams.",
-        poster: "images/featured/lalaland.jpg",
-        backdrop: "images/featured/lalaland_bg.jpg",
+        poster: "/images/featured/lalaland.jpg",
+        backdrop: "/images/featured/lalaland_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/0pdqf4P9MB8"
     },
     {
@@ -863,8 +863,8 @@ const movies = [
         director: "Denis Villeneuve",
         cast: ["Amy Adams", "Jeremy Renner", "Forest Whitaker", "Michael Stuhlbarg"],
         description: "A linguist works with the military to communicate with aliens after twelve spacecraft appear.",
-        poster: "images/featured/arrival.webp",
-        backdrop: "images/featured/arrival_bg.jpg",
+        poster: "/images/featured/arrival.webp",
+        backdrop: "/images/featured/arrival_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/tFMo3UJ4B4g"
     },
     {
@@ -877,8 +877,8 @@ const movies = [
         director: "Denis Villeneuve",
         cast: ["Ryan Gosling", "Harrison Ford", "Ana de Armas", "Sylvia Hoeks"],
         description: "Blade Runner K discovers a long-buried secret and tracks down missing Rick Deckard.",
-        poster: "images/featured/Blade Runner 2049.jpg",
-        backdrop: "images/featured/Blade Runner 2049_bg.avif",
+        poster: "/images/featured/Blade Runner 2049.jpg",
+        backdrop: "/images/featured/Blade Runner 2049_bg.avif",
         trailerUrl: "https://www.youtube.com/embed/gCcx85zbxz4"
     },
     {
@@ -891,8 +891,8 @@ const movies = [
         director: "Ridley Scott",
         cast: ["Harrison Ford", "Rutger Hauer", "Sean Young", "Edward James Olmos"],
         description: "A blade runner must pursue and terminate four replicants who returned to Earth.",
-        poster: "images/featured/blade-runner.jpg",
-        backdrop: "images/featured/blade-runner_bg.jpg",
+        poster: "/images/featured/blade-runner.jpg",
+        backdrop: "/images/featured/blade-runner_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/eogpIG53Cis"
     },
     {
@@ -905,8 +905,8 @@ const movies = [
         director: "Ridley Scott",
         cast: ["Sigourney Weaver", "Tom Skerritt", "John Hurt", "Veronica Cartwright"],
         description: "The crew of a commercial spacecraft encounters a deadly lifeform.",
-        poster: "images/featured/alien.jpg",
-        backdrop: "images/featured/alien_bg.jpg",
+        poster: "/images/featured/alien.jpg",
+        backdrop: "/images/featured/alien_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/jQ5lPt9edzQ"
     },
     {
@@ -919,8 +919,8 @@ const movies = [
         director: "James Cameron",
         cast: ["Sigourney Weaver", "Michael Biehn", "Carrie Henn", "Paul Reiser"],
         description: "Ripley returns to a colonized moon under attack by aliens.",
-        poster: "images/featured/aliens.jpg",
-        backdrop: "images/featured/aliens_bg.jpg",
+        poster: "/images/featured/aliens.jpg",
+        backdrop: "/images/featured/aliens_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/bTCaVjQ8nU4"
     },
     {
@@ -933,8 +933,8 @@ const movies = [
         director: "James Cameron",
         cast: ["Arnold Schwarzenegger", "Linda Hamilton", "Edward Furlong", "Robert Patrick"],
         description: "A cyborg must protect John Connor from a more advanced terminator.",
-        poster: "images/featured/terminator-2.jpg",
-        backdrop: "images/featured/terminator-2_bg.jpg",
+        poster: "/images/featured/terminator-2.jpg",
+        backdrop: "/images/featured/terminator-2_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/CRRulUiAls0"
     },
     {
@@ -947,8 +947,8 @@ const movies = [
         director: "James Cameron",
         cast: ["Arnold Schwarzenegger", "Linda Hamilton", "Michael Biehn", "Paul Winfield"],
         description: "A soldier from the future is sent to stop a cyborg from killing Sarah Connor.",
-        poster: "images/featured/the-terminator.jpg",
-        backdrop: "images/featured/the-terminator_bg.jpg",
+        poster: "/images/featured/the-terminator.jpg",
+        backdrop: "/images/featured/the-terminator_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/k64P4l2Wmeg"
     },
     {
@@ -961,8 +961,8 @@ const movies = [
         director: "Steven Spielberg",
         cast: ["Sam Neill", "Laura Dern", "Jeff Goldblum", "Richard Attenborough"],
         description: "Dinosaurs run loose in a theme park after a power failure.",
-        poster: "images/featured/jurassic-park.jpg",
-        backdrop: "images/featured/jurassic-park_bg.jpg",
+        poster: "/images/featured/jurassic-park.jpg",
+        backdrop: "/images/featured/jurassic-park_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/lc0UehItTBo"
     },
     {
@@ -975,8 +975,8 @@ const movies = [
         director: "Robert Zemeckis",
         cast: ["Michael J. Fox", "Christopher Lloyd", "Lea Thompson", "Crispin Glover"],
         description: "Marty McFly is accidentally sent 30 years into the past in a time-traveling DeLorean.",
-        poster: "images/featured/back-to-the-future.jpg",
-        backdrop: "images/featured/back-to-the-future_bg.jpg",
+        poster: "/images/featured/back-to-the-future.jpg",
+        backdrop: "/images/featured/back-to-the-future_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/qvsgGtivCgs"
     },
     {
@@ -989,8 +989,8 @@ const movies = [
         director: "George Lucas",
         cast: ["Mark Hamill", "Harrison Ford", "Carrie Fisher", "Alec Guinness"],
         description: "Luke Skywalker joins forces to save the galaxy from the Empire's Death Star.",
-        poster: "images/featured/star-wars-anewhope.jpg",
-        backdrop: "images/featured/star-wars-anewhope_bg.jpg",
+        poster: "/images/featured/star-wars-anewhope.jpg",
+        backdrop: "/images/featured/star-wars-anewhope_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/vZ734NWnAHA"
     },
     {
@@ -1003,8 +1003,8 @@ const movies = [
         director: "Irvin Kershner",
         cast: ["Mark Hamill", "Harrison Ford", "Carrie Fisher", "Billy Dee Williams"],
         description: "Luke trains with Yoda while friends are pursued by Darth Vader across the galaxy.",
-        poster: "images/featured/empire-strikes-back.jpg",
-        backdrop: "images/featured/empire-strikes-back_bg.jpg",
+        poster: "/images/featured/empire-strikes-back.jpg",
+        backdrop: "/images/featured/empire-strikes-back_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/JNwNXF9Y6kY"
     },
     {
@@ -1017,8 +1017,8 @@ const movies = [
         director: "Richard Marquand",
         cast: ["Mark Hamill", "Harrison Ford", "Carrie Fisher", "Billy Dee Williams"],
         description: "The Rebels attempt to destroy the second Death Star while Luke confronts Vader.",
-        poster: "images/featured/return-of-the-jedi.jpg",
-        backdrop: "images/featured/return-of-the-jedi_bg.jpg",
+        poster: "/images/featured/return-of-the-jedi.jpg",
+        backdrop: "/images/featured/return-of-the-jedi_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/7Lfi5ax54c0"
     },
     {
@@ -1031,8 +1031,8 @@ const movies = [
         director: "Steven Spielberg",
         cast: ["Harrison Ford", "Karen Allen", "Paul Freeman", "John Rhys-Davies"],
         description: "Indiana Jones races Nazis to seize the Ark of the Covenant.",
-        poster: "images/featured/raiders-lost-ark.jpg",
-        backdrop: "images/featured/raiders-lost-ark_bg.jpg",
+        poster: "/images/featured/raiders-lost-ark.jpg",
+        backdrop: "/images/featured/raiders-lost-ark_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/Rh_LvQfX9JA"
     },
     {
@@ -1045,8 +1045,8 @@ const movies = [
         director: "Roger Allers, Rob Minkoff",
         cast: ["Matthew Broderick", "Jeremy Irons", "James Earl Jones", "Whoopi Goldberg"],
         description: "Lion prince Simba must reclaim his throne from his bitter uncle.",
-        poster: "images/featured/the-lion-king.jpg",
-        backdrop: "images/featured/the-lion-king_bg.jpg",
+        poster: "/images/featured/the-lion-king.jpg",
+        backdrop: "/images/featured/the-lion-king_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/lFzVJEgsoOc"
     },
     {
@@ -1059,8 +1059,8 @@ const movies = [
         director: "John Lasseter",
         cast: ["Tom Hanks", "Tim Allen", "Don Rickles", "Jim Varney"],
         description: "A cowboy doll is threatened when a new spaceman figure becomes the top toy.",
-        poster: "images/featured/toy-story.jpg",
-        backdrop: "images/featured/toy-story_bg.jpg",
+        poster: "/images/featured/toy-story.jpg",
+        backdrop: "/images/featured/toy-story_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/v-PjgYDrg70"
     },
     {
@@ -1073,8 +1073,8 @@ const movies = [
         director: "Andrew Stanton",
         cast: ["Albert Brooks", "Ellen DeGeneres", "Alexander Gould", "Willem Dafoe"],
         description: "A timid clownfish journeys to Sydney to rescue his captured son.",
-        poster: "images/featured/finding-nemo.jpg",
-        backdrop: "images/featured/finding-nemo_bg.jpg",
+        poster: "/images/featured/finding-nemo.jpg",
+        backdrop: "/images/featured/finding-nemo_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/wZdpNglLbt8"
     },
     {
@@ -1087,8 +1087,8 @@ const movies = [
         director: "Pete Docter",
         cast: ["Edward Asner", "Jordan Nagai", "John Ratzenberger", "Christopher Plummer"],
         description: "An elderly man flies his house to Paradise Falls with a young stowaway.",
-        poster: "images/featured/up.jpg",
-        backdrop: "images/featured/up_bg.jpg",
+        poster: "/images/featured/up.jpg",
+        backdrop: "/images/featured/up_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/ORFWdXlZj_Y"
     },
     {
@@ -1101,8 +1101,8 @@ const movies = [
         director: "Andrew Stanton",
         cast: ["Ben Burtt", "Elissa Knight", "Jeff Garlin", "Fred Willard"],
         description: "A waste-collecting robot embarks on a space journey that will decide mankind's fate.",
-        poster: "images/featured/wall-e.jpg",
-        backdrop: "images/featured/wall-e_bg.jpg",
+        poster: "/images/featured/wall-e.jpg",
+        backdrop: "/images/featured/wall-e_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/alIq_wG9Fsk"
     },
     {
@@ -1115,8 +1115,8 @@ const movies = [
         director: "Lee Unkrich",
         cast: ["Anthony Gonzalez", "Gael Garcia Bernal", "Benjamin Bratt", "Alanna Ubach"],
         description: "Miguel enters the Land of the Dead to find his legendary musician ancestor.",
-        poster: "images/featured/coco.jpg",
-        backdrop: "images/featured/coco_bg.jpg",
+        poster: "/images/featured/coco.jpg",
+        backdrop: "/images/featured/coco_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/xlnPHQ3TLX8"
     },
     {
@@ -1129,8 +1129,8 @@ const movies = [
         director: "Pete Docter",
         cast: ["Amy Poehler", "Phyllis Smith", "Richard Kind", "Bill Hader"],
         description: "Riley's emotions conflict as she navigates a move to a new city.",
-        poster: "images/featured/inside-out.jpg",
-        backdrop: "images/featured/inside-out_bg.jpg",
+        poster: "/images/featured/inside-out.jpg",
+        backdrop: "/images/featured/inside-out_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/yRUZxV9WlfI"
     },
     {
@@ -1143,8 +1143,8 @@ const movies = [
         director: "Christopher Nolan",
         cast: ["Christian Bale", "Tom Hardy", "Anne Hathaway", "Gary Oldman"],
         description: "Batman is forced out of exile by Bane, who is determined to destroy Gotham.",
-        poster: "images/featured/dark-knight-rises.jpg",
-        backdrop: "images/featured/dark-knight-rises_bg.jpg",
+        poster: "/images/featured/dark-knight-rises.jpg",
+        backdrop: "/images/featured/dark-knight-rises_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/g8evyE9TuYk"
     },
     {
@@ -1157,8 +1157,8 @@ const movies = [
         director: "Christopher Nolan",
         cast: ["Christian Bale", "Michael Caine", "Liam Neeson", "Katie Holmes"],
         description: "Bruce Wayne seeks the means to fight injustice after witnessing his parents' death.",
-        poster: "images/featured/batman-begins.jpg",
-        backdrop: "images/featured/batman-begins_bg.jpg",
+        poster: "/images/featured/batman-begins.jpg",
+        backdrop: "/images/featured/batman-begins_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/neY2xYmPTQA"
     },
     {
@@ -1171,8 +1171,8 @@ const movies = [
         director: "Martin Campbell",
         cast: ["Daniel Craig", "Eva Green", "Mads Mikkelsen", "Judi Dench"],
         description: "James Bond's first mission as 007 involves a high-stakes poker game against a terrorist banker.",
-        poster: "images/featured/casino-royale.jpg",
-        backdrop: "images/featured/casino-royale_bg.jpg",
+        poster: "/images/featured/casino-royale.jpg",
+        backdrop: "/images/featured/casino-royale_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/36mnx8dBbGE"
     },
     {
@@ -1185,8 +1185,8 @@ const movies = [
         director: "Sam Mendes",
         cast: ["Daniel Craig", "Judi Dench", "Javier Bardem", "Ralph Fiennes"],
         description: "Bond's loyalty to M is tested when her past comes back and MI6 is attacked.",
-        poster: "images/featured/skyfall.jpg",
-        backdrop: "images/featured/skyfall_bg.jpg",
+        poster: "/images/featured/skyfall.jpg",
+        backdrop: "/images/featured/skyfall_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/6kw1UZDJrJ0"
     },
     {
@@ -1199,8 +1199,8 @@ const movies = [
         director: "Christopher McQuarrie",
         cast: ["Tom Cruise", "Henry Cavill", "Ving Rhames", "Simon Pegg"],
         description: "Ethan Hunt and the IMF race against time after a mission gone wrong.",
-        poster: "images/featured/mi-fallout.jpg",
-        backdrop: "images/featured/mi-fallout_bg.jpg",
+        poster: "/images/featured/mi-fallout.jpg",
+        backdrop: "/images/featured/mi-fallout_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/wb49-oV0F78"
     },
     {
@@ -1213,8 +1213,8 @@ const movies = [
         director: "Joseph Kosinski",
         cast: ["Tom Cruise", "Miles Teller", "Jennifer Connelly", "Jon Hamm"],
         description: "Maverick confronts ghosts of his past while leading TOP GUN graduates on a dangerous mission.",
-        poster: "images/featured/top-gun-maverick.jpg",
-        backdrop: "images/featured/top-gun-maverick_bg.jpg",
+        poster: "/images/featured/top-gun-maverick.jpg",
+        backdrop: "/images/featured/top-gun-maverick_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/giXco2jaZ_4"
     },
     {
@@ -1227,8 +1227,8 @@ const movies = [
         director: "Denis Villeneuve",
         cast: ["Timothee Chalamet", "Zendaya", "Rebecca Ferguson", "Josh Brolin"],
         description: "Paul Atreides unites with the Fremen seeking revenge against those who destroyed his family.",
-        poster: "images/featured/dune-part-two.jpg",
-        backdrop: "images/featured/dune-part-two_bg.jpg",
+        poster: "/images/featured/dune-part-two.jpg",
+        backdrop: "/images/featured/dune-part-two_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/Way9Dexny3w"
     },
     {
@@ -1241,8 +1241,8 @@ const movies = [
         director: "Daniel Kwan, Daniel Scheinert",
         cast: ["Michelle Yeoh", "Stephanie Hsu", "Ke Huy Quan", "Jamie Lee Curtis"],
         description: "A Chinese immigrant must save existence by exploring other universes and lives she could have led.",
-        poster: "images/featured/everything-everywhere.jpg",
-        backdrop: "images/featured/everything-everywhere_bg.jpg",
+        poster: "/images/featured/everything-everywhere.jpg",
+        backdrop: "/images/featured/everything-everywhere_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/wxN1PexLpzA"
     },
     {
@@ -1255,8 +1255,8 @@ const movies = [
         director: "Martin Scorsese",
         cast: ["Leonardo DiCaprio", "Mark Ruffalo", "Ben Kingsley", "Michelle Williams"],
         description: "A U.S. Marshal investigates a disappearance from a hospital for the criminally insane.",
-        poster: "images/featured/shutter-island.jpg",
-        backdrop: "images/featured/shutter-island_bg.jpg",
+        poster: "/images/featured/shutter-island.jpg",
+        backdrop: "/images/featured/shutter-island_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/v8yrZSkKxTA"
     },
     {
@@ -1269,8 +1269,8 @@ const movies = [
         director: "Steven Spielberg",
         cast: ["Leonardo DiCaprio", "Tom Hanks", "Christopher Walken", "Martin Sheen"],
         description: "A skilled young forger is pursued by an FBI agent across multiple identities.",
-        poster: "images/featured/catch-me-if-you-can.jpg",
-        backdrop: "images/featured/catch-me-if-you-can_bg.jpg",
+        poster: "/images/featured/catch-me-if-you-can.jpg",
+        backdrop: "/images/featured/catch-me-if-you-can_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/sY122JHDN10"
     },
     {
@@ -1283,8 +1283,8 @@ const movies = [
         director: "Alejandro G. Inarritu",
         cast: ["Leonardo DiCaprio", "Tom Hardy", "Domhnall Gleeson", "Will Poulter"],
         description: "A frontiersman fights for survival after a bear attack and betrayal by his hunting team.",
-        poster: "images/featured/the-revenant.jpg",
-        backdrop: "images/featured/the-revenant_bg.jpg",
+        poster: "/images/featured/the-revenant.jpg",
+        backdrop: "/images/featured/the-revenant_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/LoebZZ8K5N0"
     },
     {
@@ -1297,8 +1297,8 @@ const movies = [
         director: "Sam Mendes",
         cast: ["George MacKay", "Dean-Charles Chapman", "Mark Strong", "Andrew Scott"],
         description: "Two British soldiers must deliver a message across enemy lines to stop a deadly trap.",
-        poster: "images/featured/1917.jpg",
-        backdrop: "images/featured/1917_bg.jpg",
+        poster: "/images/featured/1917.jpg",
+        backdrop: "/images/featured/1917_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/gZboPGwFhqE"
     },
     {
@@ -1311,8 +1311,8 @@ const movies = [
         director: "James Mangold",
         cast: ["Matt Damon", "Christian Bale", "Jon Bernthal", "Caitriona Balfe"],
         description: "Carroll Shelby and Ken Miles build a race car for Ford to defeat Ferrari at Le Mans.",
-        poster: "images/featured/ford-v-ferrari.jpg",
-        backdrop: "images/featured/ford-v-ferrari_bg.jpg",
+        poster: "/images/featured/ford-v-ferrari.jpg",
+        backdrop: "/images/featured/ford-v-ferrari_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/zyYgEt38sci"
     },
     {
@@ -1325,8 +1325,8 @@ const movies = [
         director: "Martin Scorsese",
         cast: ["Robert De Niro", "Al Pacino", "Joe Pesci", "Harvey Keitel"],
         description: "An aging hitman recalls his time with the mob and Jimmy Hoffa.",
-        poster: "images/featured/the-irishman.jpg",
-        backdrop: "images/featured/the-irishman_bg.jpg",
+        poster: "/images/featured/the-irishman.jpg",
+        backdrop: "/images/featured/the-irishman_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/WHXxVmeGQUc"
     },
     {
@@ -1339,8 +1339,8 @@ const movies = [
         director: "Quentin Tarantino",
         cast: ["Leonardo DiCaprio", "Brad Pitt", "Margot Robbie", "Emile Hirsch"],
         description: "A faded TV actor and his stunt double strive for success in 1969 Hollywood.",
-        poster: "images/featured/once-upon-a-time-hollywood.jpg",
-        backdrop: "images/featured/once-upon-a-time-hollywood_bg.jpg",
+        poster: "/images/featured/once-upon-a-time-hollywood.jpg",
+        backdrop: "/images/featured/once-upon-a-time-hollywood_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/ELeMaP8EPAA"
     },
     {
@@ -1353,8 +1353,8 @@ const movies = [
         director: "Greta Gerwig",
         cast: ["Margot Robbie", "Ryan Gosling", "America Ferrera", "Kate McKinnon"],
         description: "Barbie suffers a crisis that leads her to question her world and existence.",
-        poster: "images/featured/barbie.jpg",
-        backdrop: "images/featured/barbie_bg.jpg",
+        poster: "/images/featured/barbie.jpg",
+        backdrop: "/images/featured/barbie_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/pBk4NYhWNMM"
     },
     {
@@ -1367,8 +1367,8 @@ const movies = [
         director: "Gary Ross",
         cast: ["Jennifer Lawrence", "Josh Hutcherson", "Liam Hemsworth", "Woody Harrelson"],
         description: "Katniss takes her sister's place in a televised fight to the death.",
-        poster: "images/featured/hunger-games.jpg",
-        backdrop: "images/featured/hunger-games_bg.jpg",
+        poster: "/images/featured/hunger-games.jpg",
+        backdrop: "/images/featured/hunger-games_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/mfmrPu43DF8"
     },
     {
@@ -1381,8 +1381,8 @@ const movies = [
         director: "Andy Muschietti",
         cast: ["Bill Skarsgard", "Jaeden Martell", "Finn Wolfhard", "Sophia Lillis"],
         description: "Bullied kids band together to destroy a shape-shifting clown monster in Derry.",
-        poster: "images/featured/it.jpg",
-        backdrop: "images/featured/it_bg.jpg",
+        poster: "/images/featured/it.jpg",
+        backdrop: "/images/featured/it_bg.jpg",
         trailerUrl: "https://www.youtube.com/embed/xKJmEC5ieOk"
     }
 ];

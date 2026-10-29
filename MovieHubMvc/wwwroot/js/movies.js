@@ -34,7 +34,7 @@ function createMovieCard(movie) {
         <button class="favorite-btn" data-id="${movie.id}">
             ${isFav ? "❤️" : "🤍"}
         </button>
-        <img src="${movie.poster}" alt="${movie.title}">
+        <img src="${movie.poster}" onerror="this.onerror=null;this.src='/images/featured/poster-unavailable.svg'" alt="${movie.title}">
         <div class="movie-overlay">
             <div class="movie-title">
                 <h3>${movie.title}</h3>

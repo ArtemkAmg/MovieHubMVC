@@ -35,7 +35,7 @@ function createMovieCard(movie) {
         <button class="favorite-btn" data-id="${movie.id}">
             ${isFav ? "❤️" : "🤍"}
         </button>
-        <img src="${movie.poster}" alt="${movie.title}">
+        <img src="${movie.poster}" onerror="this.onerror=null;this.src='/images/featured/poster-unavailable.svg'" alt="${movie.title}">
         <div class="movie-overlay">
             <div class="movie-title">
                 <h3>${movie.title}</h3>
@@ -300,7 +300,7 @@ function renderRecommended() {
         card.classList.add("recommended-card");
 
         card.innerHTML = `
-            <img src="${movie.poster}" alt="${movie.title}">
+            <img src="${movie.poster}" onerror="this.onerror=null;this.src='/images/featured/poster-unavailable.svg'" alt="${movie.title}">
             <div class="recommended-overlay">
                 <h3>${movie.title}</h3>
                 <span>⭐ ${movie.rating}</span>

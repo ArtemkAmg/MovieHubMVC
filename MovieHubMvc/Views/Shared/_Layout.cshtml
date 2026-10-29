@@ -21,60 +21,7 @@
 <body>
     <header class="header">
         <div class="container">
-            <nav class="navbar">
-                <a asp-controller="Home" asp-action="Index" class="logo">
-                    <i class="fa-solid fa-clapperboard"></i> MovieHub
-                </a>
-
-                <ul class="nav-links">
-                    <li>
-                        <a asp-controller="Home" asp-action="Index"
-                           class="@(ViewContext.RouteData.Values["Controller"]?.ToString() == "Home" ? "active" : "")">
-                            @L["Nav_Home"]
-                        </a>
-                    </li>
-                    <li>
-                        <a asp-controller="Movies" asp-action="Index"
-                           class="@(ViewContext.RouteData.Values["Controller"]?.ToString() == "Movies" ? "active" : "")">
-                            @L["Nav_Movies"]
-                        </a>
-                    </li>
-                    <li>
-                        <a asp-controller="Contact" asp-action="Index"
-                           class="@(ViewContext.RouteData.Values["Controller"]?.ToString() == "Contact" ? "active" : "")">
-                            @L["Nav_Contact"]
-                        </a>
-                    </li>
-                    <li>
-                        <a asp-controller="Files" asp-action="Index"
-                           class="@(ViewContext.RouteData.Values["Controller"]?.ToString() == "Files" ? "active" : "")">
-                            @L["Nav_Files"]
-                        </a>
-                    </li>
-                    <li class="nav-mobile-only">
-                        <a asp-controller="Favorites" asp-action="Index"
-                           class="@(ViewContext.RouteData.Values["Controller"]?.ToString() == "Favorites" ? "active" : "")">
-                            ❤ @L["Nav_Favorites"]
-                        </a>
-                    </li>
-                </ul>
-
-                <div class="search-box">
-                    <input type="text" id="searchInput" placeholder="@L["Search_Placeholder"]" autocomplete="off">
-                </div>
-
-                <!-- Language switcher (partial) -->
-                <partial name="_LanguageSwitcher" />
-
-                <div class="nav-actions">
-                    <a asp-controller="Favorites" asp-action="Index" class="favorite-btn" title="@L["Nav_Favorites"]">
-                        <i class="fa-regular fa-heart"></i>
-                    </a>
-                    <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false">
-                        <i class="fa-solid fa-bars"></i>
-                    </button>
-                </div>
-            </nav>
+            @await Component.InvokeAsync("Navbar")
         </div>
     </header>
 
